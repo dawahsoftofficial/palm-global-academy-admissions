@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>September 2026 Admissions | Palm Global Academy</title>
   <meta name="description" content="Protect your child’s faith while raising their academic standard through Palm Global Academy’s specialist-led British and Islamic online education framework. September 2026 admissions for Years 5–6, 7–9 and 10–11.">
   <meta name="theme-color" content="#063b37">
@@ -539,7 +540,7 @@
           <p class="hero__lead">Palm Global Academy helps Muslim parents provide a safe, high-quality British education through live subject specialists, a clear individualised plan and Islamic values woven throughout the school day.</p>
         </div>
         <div class="hero__visual">
-          <iframe class="hero__video" src="https://www.youtube-nocookie.com/embed/YXH3VgcHGqU?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=YXH3VgcHGqU&amp;rel=0&amp;playsinline=1" title="Welcome to Palm Global Academy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+          <iframe class="hero__video" data-youtube="YXH3VgcHGqU" title="Welcome to Palm Global Academy" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
         </div>
         <div class="hero__conversion">
           <div class="actions hero__actions">
@@ -955,14 +956,22 @@
   <script>
     (() => {
       'use strict';
+      const pageOrigin = window.location.origin;
+      const widgetReferrer = window.location.href.split('#')[0].split('?')[0];
+      const heroVideo = document.querySelector('.hero__video[data-youtube]');
+      if (heroVideo) {
+        const id = heroVideo.dataset.youtube;
+        heroVideo.src = `https://www.youtube.com/embed/${encodeURIComponent(id)}?autoplay=1&mute=1&loop=1&playlist=${encodeURIComponent(id)}&rel=0&playsinline=1&origin=${encodeURIComponent(pageOrigin)}&widget_referrer=${encodeURIComponent(widgetReferrer)}`;
+      }
       document.querySelectorAll('.js-youtube').forEach((button) => {
         button.addEventListener('click', () => {
           const id = button.dataset.youtube;
           const title = button.dataset.title || 'Palm Global Academy video';
           if (!id) return;
           const iframe = document.createElement('iframe');
-          iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&playsinline=1`;
+          iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&playsinline=1&origin=${encodeURIComponent(pageOrigin)}&widget_referrer=${encodeURIComponent(widgetReferrer)}`;
           iframe.title = title;
+          iframe.referrerPolicy = 'strict-origin-when-cross-origin';
           iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
           button.replaceWith(iframe);
           iframe.focus();
