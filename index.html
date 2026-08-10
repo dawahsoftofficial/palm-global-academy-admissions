@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>September 2026 Admissions | Palm Global Academy</title>
-  <meta name="description" content="Give your child a live, teacher-led British education without compromising Islamic values. Explore Palm Global Academy and book a free September 2026 admissions consultation for Years 5–6, 7–9 and 10–11.">
+  <meta name="description" content="Protect your child’s faith while raising their academic standard through Palm Global Academy’s specialist-led British and Islamic online education framework. September 2026 admissions for Years 5–6, 7–9 and 10–11.">
   <meta name="theme-color" content="#063b37">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -354,7 +354,7 @@
     .fit-card ul { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .9rem; }
     .fit-card li { position: relative; padding-left: 1.8rem; color: var(--muted); }
     .fit-card li::before { content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 900; }
-    .fit-card--talk li::before { content: "→"; color: var(--gold-dark); }
+    .fit-card--talk li::before { content: "×"; color: #b86b00; }
 
     .leadership { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, .72fr); gap: clamp(2.5rem, 6vw, 6rem); align-items: center; }
     .leadership__image { width: 100%; max-width: 570px; justify-self: end; }
@@ -368,6 +368,41 @@
     .journey__step { position: relative; padding: 2rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); counter-increment: journey; }
     .journey__step::before { content: "0" counter(journey); display: block; margin-bottom: 1.2rem; color: var(--teal); font-size: 2rem; font-weight: 800; line-height: 1; }
     .journey__step p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+
+    .first-term { margin-top: clamp(2.5rem, 5vw, 4rem); }
+    .phase-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .phase-card { position: relative; padding: clamp(1.5rem, 3vw, 2.2rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow-sm); }
+    .phase-card__time { display: inline-flex; margin-bottom: 1.1rem; padding: .35rem .7rem; border-radius: 999px; background: var(--gold-soft); color: var(--ink); font-size: .72rem; font-weight: 800; }
+    .phase-card h3 { max-width: 300px; }
+    .phase-card p { color: var(--muted); font-size: .9rem; }
+    .phase-card ul { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; gap: .7rem; }
+    .phase-card li { position: relative; padding-left: 1.65rem; color: var(--muted); font-size: .86rem; }
+    .phase-card li::before { content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 900; }
+    .long-game { display: grid; grid-template-columns: auto 1fr; gap: 1.2rem; align-items: center; margin-top: 1.2rem; padding: 1.5rem 1.7rem; border-radius: var(--radius); background: var(--forest); color: rgba(233,244,242,.78); }
+    .long-game__number { color: var(--gold); font-size: 2rem; font-weight: 800; line-height: 1; }
+    .long-game h3 { color: var(--white); margin-bottom: .35rem; }
+    .long-game p { margin: 0; font-size: .9rem; }
+    .year-rhythm { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.2rem; }
+    .year-term { padding: 1.2rem 1.4rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: rgba(255,255,255,.72); }
+    .year-term strong { display: block; color: var(--teal-dark); margin-bottom: .2rem; }
+    .year-term span { color: var(--muted); font-size: .84rem; }
+
+    .fee-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .fee-card { display: flex; flex-direction: column; padding: clamp(1.5rem, 3vw, 2.2rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow-sm); }
+    .fee-card--featured { border: 2px solid var(--teal); transform: translateY(-10px); }
+    .fee-card__stage { align-self: flex-start; margin-bottom: 1.2rem; padding: .35rem .65rem; border-radius: 999px; background: var(--teal-soft); color: var(--teal-dark); font-size: .72rem; font-weight: 800; }
+    .fee-card__price { margin: .4rem 0 .35rem; color: var(--forest); font-size: clamp(2.1rem, 4vw, 3.2rem); font-weight: 800; line-height: 1; letter-spacing: -.055em; }
+    .fee-card__price span { color: var(--muted); font-size: .78rem; font-weight: 600; letter-spacing: 0; }
+    .fee-card p { color: var(--muted); font-size: .88rem; }
+    .fee-card ul { list-style: none; padding: 1.2rem 0 0; margin: auto 0 0; border-top: 1px solid var(--line); display: grid; gap: .7rem; }
+    .fee-card li { color: var(--muted); font-size: .82rem; }
+    .fee-note { max-width: 900px; margin: 1.5rem auto 0; color: var(--muted); text-align: center; font-size: .82rem; }
+    .fee-note strong { color: var(--ink); }
+
+    .journey--five { grid-template-columns: repeat(5, 1fr); }
+    .journey--five .journey__step { padding: 1.5rem; }
+    .journey--five .journey__step h3 { font-size: 1.05rem; }
+    .admissions-note { max-width: 920px; margin: 2rem auto 0; padding: 1.3rem 1.5rem; border-left: 5px solid var(--gold); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; background: var(--gold-soft); color: var(--ink); font-size: .9rem; }
 
     .faq { max-width: 920px; margin: auto; display: grid; gap: .75rem; }
     .faq details { border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--white); }
@@ -427,6 +462,9 @@
       .programme { display: grid; grid-template-columns: 280px 1fr; }
       .programme__image { height: 100%; min-height: 270px; }
       .testimonials { grid-template-columns: 1fr; }
+      .phase-grid, .fee-grid { grid-template-columns: 1fr; }
+      .fee-card--featured { transform: none; }
+      .journey--five { grid-template-columns: repeat(2, 1fr); }
       .footer__grid { grid-template-columns: 1fr 1fr; }
       .footer__brand { grid-column: 1 / -1; }
     }
@@ -445,7 +483,8 @@
       .hero__actions { justify-content: center; }
       .hero__visual { max-width: 100%; margin: 2rem auto 0; }
       .hero__badge { right: -10px; bottom: -22px; width: 128px; height: 128px; }
-      .split, .fit-grid, .journey { grid-template-columns: 1fr; }
+      .split, .fit-grid, .journey, .journey--five, .year-rhythm { grid-template-columns: 1fr; }
+      .long-game { grid-template-columns: 1fr; }
       .day-layout { display: flex; flex-direction: column-reverse; }
       .day-image { max-width: 500px; margin: auto; }
       .day-image img, .leadership__image img, .final-cta__image img { aspect-ratio: 16 / 11; object-position: center 42%; }
@@ -467,6 +506,7 @@
     @media (max-width: 540px) {
       .wrap { width: min(calc(100% - 28px), var(--wrap)); }
       .section { padding: 4.2rem 0; }
+      h2 { font-size: 1.9rem; }
       .nav > .btn { display: none; }
       .hero .actions .btn { width: 100%; }
       .proof-strip__grid { grid-template-columns: repeat(2, 1fr); }
@@ -495,8 +535,8 @@
       <div class="wrap hero__grid">
         <div class="hero__copy">
           <span class="eyebrow">September 2026 admissions · Years 5–6 · 7–9 · 10–11</span>
-          <h1>You shouldn’t have to choose between academic excellence and Islamic values.</h1>
-          <p class="hero__lead">Give your child a full-time British education with live teachers, a clear timetable and meaningful Islamic tarbiyah—all from the safety and flexibility of home.</p>
+          <h1>Protect their faith. Raise their academic standard. Give them a school built for both.</h1>
+          <p class="hero__lead">Palm Global Academy helps Muslim parents provide a safe, high-quality British education through live subject specialists, a clear individualised plan and Islamic values woven throughout the school day.</p>
         </div>
         <div class="hero__visual">
           <iframe class="hero__video" src="https://www.youtube-nocookie.com/embed/YXH3VgcHGqU?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=YXH3VgcHGqU&amp;rel=0&amp;playsinline=1" title="Welcome to Palm Global Academy" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
@@ -504,7 +544,7 @@
         <div class="hero__conversion">
           <div class="actions hero__actions">
             <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">
-              See if PGA is right for my child
+              Explore the right path for my child
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
           </div>
@@ -527,9 +567,9 @@
     <section class="section section--soft">
       <div class="wrap">
         <div class="section-head center">
-          <span class="eyebrow">Does this sound familiar?</span>
-          <h2>If your child’s education feels like a compromise, it doesn’t have to stay that way.</h2>
-          <p>You want them challenged academically, grounded in Islam and genuinely known by their teachers. Finding all three in one school can feel almost impossible. That is exactly the gap PGA was built to fill.</p>
+          <span class="eyebrow">The choice many Muslim parents feel forced to make</span>
+          <h2>A strong education should not come at the cost of your child’s Islamic identity.</h2>
+          <p>You want excellent teaching, a safe learning environment and values that reinforce what you nurture at home. PGA exists because Muslim families should not have to sacrifice one to secure the others.</p>
         </div>
         <div class="split">
           <article class="compare-card compare-card--need">
@@ -539,6 +579,7 @@
               <li><strong>“Who is shaping their character?”</strong>You want school to reinforce the values you nurture at home.</li>
               <li><strong>“Will online learning leave them isolated?”</strong>You want real teachers, interaction and belonging.</li>
               <li><strong>“Will I have to teach everything?”</strong>You need professional structure without becoming the school.</li>
+              <li><strong>“How much energy is the school routine consuming?”</strong>Commuting, uniforms, lunches and an exhausting day all carry a cost.</li>
             </ul>
           </article>
           <article class="compare-card compare-card--answer">
@@ -548,6 +589,7 @@
               <li><strong>Teachers who are present</strong>Live explanation, questions, discussion and feedback—not a library of recordings.</li>
               <li><strong>Faith woven into the school day</strong>Qur’an Studies, Qur’anic Arabic and character development with purpose.</li>
               <li><strong>No more guessing about progress</strong>Reports, consultations and a parent portal keep learning visible.</li>
+              <li><strong>More time returned to family life</strong>Home-based learning removes the daily school run while preserving a structured timetable.</li>
             </ul>
           </article>
         </div>
@@ -557,50 +599,98 @@
     <section class="section section--white">
       <div class="wrap">
         <div class="section-head center">
-          <span class="eyebrow">Why the PGA model works</span>
-          <h2>Online learning only works when the right support is built around your child.</h2>
+          <span class="eyebrow">The Specialist-Led Islamic Education Framework</span>
+          <h2>Four parts working together—so your child is taught, supported and known.</h2>
         </div>
         <div class="pillars">
           <article class="pillar" data-number="1">
             <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5h18v14H3zM7 9h10M7 13h6"/></svg></div>
-            <h3>They know what to do each day</h3>
-            <p>Timetabled live lessons, purposeful independent work and regular assessment create rhythm, focus and accountability.</p>
+            <h3>Expert-led subjects</h3>
+            <p>Live lessons are taught by teachers with the subject knowledge to explain clearly, challenge appropriately and prepare students for recognised qualifications.</p>
           </article>
           <article class="pillar" data-number="2">
             <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg></div>
-            <h3>Their learning strengthens who they are</h3>
-            <p>Islamic learning is woven into school life so knowledge stays connected with faith, purpose and conduct.</p>
+            <h3>Islam throughout school life</h3>
+            <p>Tarbiyah, Qur’an Studies and Qur’anic Arabic connect knowledge with faith, identity, character and conduct.</p>
           </article>
           <article class="pillar" data-number="3">
             <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="3"/><path d="M20 8v6M17 11h6"/></svg></div>
-            <h3>They are noticed, not lost in a crowd</h3>
-            <p>Small groups help teachers spot misconceptions, respond to individual needs and give useful next steps.</p>
+            <h3>A clear individualised plan</h3>
+            <p>Baseline information, subject targets, regular checkpoints and intervention plans keep support relevant to the child in front of us.</p>
           </article>
           <article class="pillar" data-number="4">
             <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19V5h16v14H4Z"/><path d="m8 14 2-2 2 1 4-4"/></svg></div>
-            <h3>You can see where they are heading</h3>
-            <p>Parent consultations, termly reviews and progress information replace uncertainty with a clearer picture.</p>
+            <h3>Structure parents can see</h3>
+            <p>Timetables, trained platform use, a student liaison officer, reports and parent meetings remove guesswork from learning at home.</p>
           </article>
         </div>
       </div>
     </section>
 
     <section class="section section--soft">
-      <div class="wrap day-layout">
-        <div class="day-image">
-          <img src="assets/pga-primary-learning.jpg" alt="Student learning from home with an online teacher" width="1400" height="2100">
-          <div class="day-note">The flexibility of home, with the structure and accountability of school.</div>
-        </div>
-        <div>
-          <span class="eyebrow">You are the parent—not every subject teacher</span>
-          <h2>Online school should not mean teaching your child everything yourself.</h2>
-          <p class="lead">PGA gives your child a real school day at home: expert teaching, focused practice, useful feedback and growing independence.</p>
-          <div class="schedule">
-            <div class="schedule__item"><div class="schedule__number">01</div><div><h3>They join a teacher, not a recording</h3><p>Teachers explain, question, model and respond in real time.</p></div></div>
-            <div class="schedule__item"><div class="schedule__number">02</div><div><h3>They turn understanding into ability</h3><p>Structured tasks and independent study help new learning become secure.</p></div></div>
-            <div class="schedule__item"><div class="schedule__number">03</div><div><h3>They know exactly what to improve</h3><p>Useful feedback makes strengths, gaps and next priorities clear.</p></div></div>
-            <div class="schedule__item"><div class="schedule__number">04</div><div><h3>They grow beyond grades</h3><p>Tarbiyah, Qur’anic learning and school culture connect knowledge with purpose.</p></div></div>
+      <div class="wrap">
+        <div class="day-layout">
+          <div class="day-image">
+            <img src="assets/pga-primary-learning.jpg" alt="Student learning independently from home with an online teacher" width="1400" height="2100">
+            <div class="day-note">A supported transition from first login to confident independent learning.</div>
           </div>
+          <div>
+            <span class="eyebrow">The first-term progress framework</span>
+            <h2>Your child should not spend months trying to work out how online school works.</h2>
+            <p class="lead">From before the first lesson, PGA builds the habits, systems and checkpoints students need to learn independently—and gives parents clear visibility without asking them to run the school day.</p>
+            <ul class="tick-list">
+              <li>Students learn how to attend lessons, navigate platforms and submit work independently.</li>
+              <li>Parents receive early training and access to monitor progress.</li>
+              <li>Baseline information and subject targets create a clear starting point.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="phase-grid first-term">
+          <article class="phase-card">
+            <span class="phase-card__time">Before school and weeks 1–2</span>
+            <h3>Phase 1 · Confident onboarding</h3>
+            <p>Training turns unfamiliar systems into an organised daily routine for both student and parent.</p>
+            <ul>
+              <li>Join live lessons without assistance</li>
+              <li>Navigate the four learning platforms</li>
+              <li>Submit classwork and homework on time</li>
+              <li>Parent platform and monitoring orientation</li>
+              <li>Baseline review and personalised subject targets</li>
+            </ul>
+          </article>
+          <article class="phase-card">
+            <span class="phase-card__time">By the half-term checkpoint</span>
+            <h3>Phase 2 · Proactive support</h3>
+            <p>We identify strengths, gaps and engagement concerns early—before small issues become larger ones.</p>
+            <ul>
+              <li>Formal progress check-in</li>
+              <li>Dedicated student liaison support</li>
+              <li>Academic and classroom-engagement feedback</li>
+              <li>Intervention plan where extra support is needed</li>
+              <li>Attention to confidence, discipline and organisation</li>
+            </ul>
+          </article>
+          <article class="phase-card">
+            <span class="phase-card__time">End of term 1 · Around four months</span>
+            <h3>Phase 3 · Tangible proof of progress</h3>
+            <p>Assessment evidence and expert conversations show what has improved and what comes next.</p>
+            <ul>
+              <li>End-of-term assessment results</li>
+              <li>Parent meetings with subject specialists</li>
+              <li>Progress measured from the starting point</li>
+              <li>Clear targets for the rest of the year</li>
+              <li>Academic and Islamic-development review</li>
+            </ul>
+          </article>
+        </div>
+        <div class="long-game">
+          <div class="long-game__number">5Y</div>
+          <div><h3>The long game: an educational flight path</h3><p>Beyond the first term, PGA helps families think in years—not weeks—across academic attainment, Qur’an, tarbiyah, character and the route towards IGCSE and further study.</p></div>
+        </div>
+        <div class="year-rhythm" aria-label="Palm Global Academy academic year">
+          <div class="year-term"><strong>Term 1</strong><span>September–December · 12 weeks</span></div>
+          <div class="year-term"><strong>Term 2</strong><span>January–April</span></div>
+          <div class="year-term"><strong>Term 3</strong><span>May–July</span></div>
         </div>
       </div>
     </section>
@@ -658,7 +748,53 @@
       </div>
     </section>
 
-    <section class="section section--soft" id="parents">
+    <section class="section section--soft" id="fees">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow">A serious education is an investment</span>
+          <h2>Clear fees. Flexible ways to pay. No need to guess before you enquire.</h2>
+          <p>Choose annual, termly or monthly payments. The admissions team will confirm the exact plan, deposit terms and any textbooks your child needs before enrolment.</p>
+        </div>
+        <div class="fee-grid">
+          <article class="fee-card">
+            <span class="fee-card__stage">Primary · Years 5–6</span>
+            <h3>Build the foundations early</h3>
+            <div class="fee-card__price">£2,450 <span>annual school fee</span></div>
+            <p>A structured Key Stage 2 programme preparing children academically and personally for secondary school.</p>
+            <ul>
+              <li>Annual payment is the best-value option</li>
+              <li>Termly and 12-month plans available</li>
+              <li>Digital resources and subscriptions included</li>
+            </ul>
+          </article>
+          <article class="fee-card fee-card--featured">
+            <span class="fee-card__stage">Secondary · Years 7–9</span>
+            <h3>Develop depth and independence</h3>
+            <div class="fee-card__price">£3,575 <span>pay in full</span></div>
+            <p>Subject-specialist teaching and a broad curriculum that prepares students to make confident IGCSE choices.</p>
+            <ul>
+              <li>Termly: approximately £1,258 × 3</li>
+              <li>Monthly: approximately £331 × 12</li>
+              <li>Digital resources and subscriptions included</li>
+            </ul>
+          </article>
+          <article class="fee-card">
+            <span class="fee-card__stage">IGCSE · Years 10–11</span>
+            <h3>Work towards recognised qualifications</h3>
+            <div class="fee-card__price">£3,950 <span>pay in full</span></div>
+            <p>Focused Edexcel International GCSE study with specialist guidance, assessment and clear subject targets.</p>
+            <ul>
+              <li>Termly: approximately £1,416 × 3</li>
+              <li>Monthly: approximately £379 × 12</li>
+              <li>Digital resources and subscriptions included</li>
+            </ul>
+          </article>
+        </div>
+        <p class="fee-note"><strong>Additional admission costs:</strong> a one-off £50 non-refundable registration fee and a £500 refundable deposit apply. Fees are payable in pounds sterling. Recommended textbooks are not included. All amounts and refund terms are confirmed in your offer and admissions policy.</p>
+      </div>
+    </section>
+
+    <section class="section section--white" id="parents">
       <div class="wrap">
         <div class="section-head center">
           <span class="eyebrow">Real families. Real experiences.</span>
@@ -708,23 +844,24 @@
         </div>
         <div class="fit-grid">
           <article class="fit-card fit-card--yes">
-            <h3>PGA could be the right fit if you want…</h3>
+            <h3>PGA could be the right fit if your family…</h3>
             <ul>
-              <li>A full-time online alternative with a clear British curriculum.</li>
-              <li>Live teachers and a timetable rather than self-paced recordings alone.</li>
-              <li>Islamic tarbiyah alongside serious academic expectations.</li>
-              <li>Greater visibility of learning, assessment and progress.</li>
-              <li>A home-based routine without becoming every subject teacher.</li>
+              <li>Views education as a long-term investment of time, effort and money.</li>
+              <li>Is concerned about mainstream influences and wants a lasting alternative.</li>
+              <li>Wants to protect and strengthen your child’s Islamic identity.</li>
+              <li>Can provide a quiet workspace, suitable device, books and parental oversight.</li>
+              <li>Has a student who is ready to learn, follow routines and aim high.</li>
+              <li>Wants a high-quality route towards university, a career and purposeful adulthood.</li>
             </ul>
           </article>
           <article class="fit-card fit-card--talk">
-            <h3>Speak with us first if…</h3>
+            <h3>PGA is unlikely to be the right fit if you want…</h3>
             <ul>
-              <li>Your child needs highly specialised learning or medical provision.</li>
-              <li>You are unsure how your child will engage with live online lessons.</li>
-              <li>You need guidance on placement, subjects or the examination pathway.</li>
-              <li>You are concerned about friendships and social development.</li>
-              <li>You want to understand fees, technology or parent responsibilities.</li>
+              <li>A short-term holding place rather than a committed school relationship.</li>
+              <li>A self-paced programme with little attendance or accountability.</li>
+              <li>A school to replace all parental involvement at home.</li>
+              <li>Admission without readiness to follow behaviour and learning expectations.</li>
+              <li>Academics without a strong foundation in tarbiyah, Arabic and understanding the Qur’an.</li>
             </ul>
           </article>
         </div>
@@ -734,15 +871,15 @@
     <section class="section section--dark">
       <div class="wrap leadership">
         <div>
-          <span class="eyebrow">The people behind your child’s progress</span>
-          <h2>Your child deserves teachers who notice when they are thriving—and when they are stuck.</h2>
-          <p class="lead">Technology delivers the lesson. Great educators make it meaningful. PGA’s senior team brings extensive experience in teaching, school leadership, teacher development and school improvement in the UK and internationally.</p>
-          <p>Teachers are chosen for subject knowledge, professional practice and the ability to build positive relationships online—so your child receives structure, clear expectations and support that responds to their progress.</p>
+          <span class="eyebrow">Why Palm Global Academy had to exist</span>
+          <h2>It began with a father asking: “What kind of school do I actually want for my own children?”</h2>
+          <p class="lead">After years in teaching and school leadership, PGA’s founder had seen increasing pressure on teachers, troubling influences on students and the difficulty of finding one school equally serious about academic excellence and Islamic character.</p>
+          <p>As a father of four approaching the secondary-school years, the question became personal. Homeschooling could not provide every subject specialist. Existing options still required compromises. In 2021, Palm Global Academy was created as the long-term alternative he wanted for his own family—and for Muslim parents facing the same decision.</p>
           <div class="credentials">
-            <div class="credential"><strong>Qualified teachers</strong><span>Relevant professional training and classroom experience.</span></div>
-            <div class="credential"><strong>Subject specialists</strong><span>Expert teaching becomes increasingly important through secondary school.</span></div>
-            <div class="credential"><strong>School leadership</strong><span>Experience leading and improving schools in the UK and internationally.</span></div>
-            <div class="credential"><strong>Ongoing review</strong><span>Lesson planning, observation, mentoring and professional development.</span></div>
+            <div class="credential"><strong>2004</strong><span>The journey began as a classroom teacher.</span></div>
+            <div class="credential"><strong>2010</strong><span>Growing concerns about behaviour, peer pressure and teacher workload.</span></div>
+            <div class="credential"><strong>2015</strong><span>School-management experience exposed the limits even values-led schools face.</span></div>
+            <div class="credential"><strong>2021</strong><span>PGA opened as a safe, specialist-led British and Islamic online school.</span></div>
           </div>
         </div>
         <div class="leadership__image">
@@ -755,13 +892,17 @@
       <div class="wrap">
         <div class="section-head center">
           <span class="eyebrow">How admissions works</span>
-          <h2>From “Could this work for my child?” to a clear decision in three steps.</h2>
+          <h2>From first interest to confident onboarding in five clear steps.</h2>
+          <p>Placement considers both age and attainment, helping students join the class where they are most likely to progress.</p>
         </div>
-        <div class="journey">
-          <article class="journey__step"><h3>Tell us about your child</h3><p>Book a free call to discuss their needs, your priorities, the likely year group and what you hope will change.</p></article>
-          <article class="journey__step"><h3>Confirm the right placement</h3><p>Where appropriate, your child completes an entrance assessment and your family meets a senior member of the academy.</p></article>
-          <article class="journey__step"><h3>Begin with confidence</h3><p>Successful families choose a payment plan, receive timetables and accounts, and join an orientation before lessons begin.</p></article>
+        <div class="journey journey--five">
+          <article class="journey__step"><h3>Expression of interest</h3><p>Share the basic parent, student and year-group details so admissions can begin guiding you.</p></article>
+          <article class="journey__step"><h3>Full application</h3><p>Use your secure portal access to provide ID, proof of address, the latest school report and relevant SEN or medical information.</p></article>
+          <article class="journey__step"><h3>Registration and assessment</h3><p>Pay the £50 non-refundable registration fee, then book and complete the entrance assessment.</p></article>
+          <article class="journey__step"><h3>Results and interview</h3><p>Meet a senior member of PGA to review the result, discuss the family and confirm whether the placement is right.</p></article>
+          <article class="journey__step"><h3>Offer and onboarding</h3><p>Accept the offer, choose a payment plan, pay the £500 deposit and receive logins, timetable and orientation details.</p></article>
         </div>
+        <div class="admissions-note"><strong>If a child is not quite ready for entry:</strong> PGA may recommend a July English and Mathematics booster programme, priced at £275 with re-evaluation, rather than closing the door on their progress.</div>
         <div class="actions actions--center" style="margin-top:2.2rem">
           <a class="btn btn--teal btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Start with my free admissions call</a>
           <a class="btn" style="border-color:var(--line);background:var(--white)" href="https://palmglobalacademy.com/apply-now/" target="_blank" rel="noopener">View fees and admissions</a>
@@ -778,9 +919,12 @@
         <div class="faq">
           <details><summary>Will I need to teach my child?</summary><p>No. PGA provides live, teacher-led lessons, structured learning and assessment. Parents support routines, technology and appropriate participation, but they are not expected to design and teach the curriculum.</p></details>
           <details><summary>How do students interact and make friends?</summary><p>Students learn in live small groups and can interact through teacher-led discussion, microphone, chat, group work and school activities. PGA also offers community experiences such as clubs and optional residential or outdoor programmes.</p></details>
-          <details><summary>How will I know whether my child is progressing?</summary><p>Teachers use formative assessment, topic tests and ongoing feedback. Parents receive progress information through consultations, termly reporting and the parent portal.</p></details>
+          <details><summary>How will I know whether my child is progressing?</summary><p>You are not expected to wait until the end of the year. PGA establishes a baseline, checks progress and engagement around half term, then provides end-of-term assessment results, subject-specialist parent meetings and clear targets for what comes next.</p></details>
+          <details><summary>What happens during the first two weeks?</summary><p>Students are trained to join lessons, use the learning platforms and submit work independently. Parents receive platform orientation, while baseline information and subject targets establish a clear starting point.</p></details>
           <details><summary>Can students work towards IGCSEs and A-Levels?</summary><p>Yes. PGA offers Edexcel International GCSE and International A-Level pathways and is an approved Pearson Edexcel Online Centre. Admissions can explain subjects, placement and examination arrangements for your child.</p></details>
-          <details><summary>What technology will my child need?</summary><p>A reliable computer or laptop, internet connection, camera, microphone and a suitable place to learn are essential. The admissions team can talk you through the practical requirements before enrolment.</p></details>
+          <details><summary>What technology will my child need?</summary><p>A laptop or desktop with a modern operating system, webcam, headset with microphone and stable internet connection are essential. PGA recommends at least 8 GB RAM, a connection of 10 Mbps download and 2 Mbps upload per student, and a quiet, well-lit workspace.</p></details>
+          <details><summary>What are the registration fee and deposit?</summary><p>A £50 non-refundable registration fee is required during the admissions process. After a successful assessment and interview, a £500 refundable deposit secures the place. The offer and admissions policy confirm refund and notice terms.</p></details>
+          <details><summary>Can students join from outside the UK?</summary><p>Yes. Overseas students are welcome where the UK timetable is practical for the family and the student demonstrates strong written and spoken English.</p></details>
           <details><summary>Can we speak to someone before applying?</summary><p>Yes. A free admissions consultation is the recommended first step for families who want to understand the programme, placement, fees or online learning before making an application.</p></details>
         </div>
       </div>
@@ -790,8 +934,8 @@
       <div class="wrap final-cta__grid">
         <div>
           <span class="eyebrow">September 2026 · Years 5–6 · 7–9 · 10–11</span>
-          <h2>Your child’s next school year does not have to feel like the last one.</h2>
-          <p class="lead">If you are ready for stronger teaching, clearer progress and an education that respects your family’s Islamic values, start with a free admissions call. We’ll help you decide whether PGA is the right place for your child to move forward.</p>
+          <h2>Give your child a school that protects who they are—and prepares them for where they are going.</h2>
+          <p class="lead">If you are ready for specialist teaching, visible progress, clear parent support and an education built around Islamic values, start with a free admissions call. We will help you decide whether PGA is the right long-term path for your family.</p>
           <div class="actions" style="margin-top:2rem">
             <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">See if PGA is right for my child</a>
           </div>
