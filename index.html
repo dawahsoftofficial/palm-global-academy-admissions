@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>September 2026 Admissions | Palm Global Academy</title>
-  <meta name="description" content="Protect your child’s faith while raising their academic standard through Palm Global Academy’s specialist-led British and Islamic online education framework. September 2026 admissions for Years 5–6, 7–9 and 10–11.">
+  <meta name="description" content="Protect your child’s faith while raising their academic standard through Palm Global Academy’s specialist-led British and Islamic online education framework. September 2026 admissions for Years 5–6 and 7–9.">
   <meta name="theme-color" content="#063b37">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -229,6 +229,90 @@
     }
     .hero__badge strong { display: block; font-size: 1.2rem; }
 
+    .hero__announce {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding: .58rem 1.15rem;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: clamp(.8rem, 1.7vw, 1rem);
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      box-shadow: 0 14px 35px -18px rgba(255,206,13,.9);
+    }
+    .hero__title { font-size: clamp(1.5rem, 3.05vw, 2.5rem); max-width: 950px; letter-spacing: -.02em; line-height: 1.24; }
+    .hero__step { text-align: center; }
+    .hero__step--one { margin-top: 2.3rem; }
+    .step-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      padding: .45rem 1.15rem .45rem .45rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,.09);
+      border: 1px solid rgba(255,255,255,.2);
+      color: var(--white);
+      font-size: .95rem;
+      font-weight: 800;
+    }
+    .step-pill__num {
+      display: grid;
+      place-items: center;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: .92rem;
+      font-weight: 900;
+    }
+    .hero .hero__visual { margin-top: 1.3rem; }
+    .countdown { margin: 1.5rem auto 0; }
+    .countdown__label {
+      display: block;
+      margin-bottom: .6rem;
+      color: var(--gold);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .countdown__timer { display: inline-flex; align-items: center; gap: .5rem; }
+    .countdown__unit {
+      display: inline-grid;
+      justify-items: center;
+      gap: .15rem;
+      min-width: 60px;
+      padding: .5rem .35rem;
+      border-radius: 14px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.16);
+      color: rgba(255,255,255,.6);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .countdown__unit strong { color: var(--white); font-size: 1.65rem; font-weight: 800; line-height: 1; letter-spacing: -.02em; }
+    .countdown__sep { color: rgba(255,255,255,.32); font-size: 1.35rem; font-weight: 700; }
+    .hero__slots {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      margin: 1.35rem 0 0;
+      padding: .5rem 1rem;
+      border-radius: 999px;
+      background: rgba(255,206,13,.12);
+      color: #ffe07a;
+      font-size: .9rem;
+      font-weight: 800;
+    }
+    .hero__slots-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); animation: slotpulse 1.8s infinite; }
+    @keyframes slotpulse { 0% { box-shadow: 0 0 0 0 rgba(255,206,13,.6);} 70% { box-shadow: 0 0 0 9px rgba(255,206,13,0);} 100% { box-shadow: 0 0 0 0 rgba(255,206,13,0);} }
+    .hero__conversion .hero__actions { margin-top: 1.4rem; }
+
     .proof-strip { background: var(--white); border-bottom: 1px solid var(--line); }
     .proof-strip__grid { display: grid; grid-template-columns: repeat(6, 1fr); }
     .proof-item {
@@ -318,7 +402,7 @@
     .schedule__number { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: var(--teal-soft); color: var(--teal-dark); font-weight: 800; }
     .schedule__item p { margin: 0; color: var(--muted); }
 
-    .programmes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .programmes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; max-width: 840px; margin-inline: auto; }
     .programme { display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,.13); border-radius: var(--radius); overflow: hidden; background: rgba(255,255,255,.065); }
     .programme__image { height: 230px; width: 100%; object-fit: cover; }
     .programme__body { display: flex; flex-direction: column; flex: 1; padding: 1.6rem; }
@@ -388,7 +472,7 @@
     .year-term strong { display: block; color: var(--teal-dark); margin-bottom: .2rem; }
     .year-term span { color: var(--muted); font-size: .84rem; }
 
-    .fee-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .fee-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; max-width: 720px; margin-inline: auto; }
     .fee-card { display: flex; flex-direction: column; padding: clamp(1.5rem, 3vw, 2.2rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); box-shadow: var(--shadow-sm); }
     .fee-card--featured { border: 2px solid var(--teal); transform: translateY(-10px); }
     .fee-card__stage { align-self: flex-start; margin-bottom: 1.2rem; padding: .35rem .65rem; border-radius: 999px; background: var(--teal-soft); color: var(--teal-dark); font-size: .72rem; font-weight: 800; }
@@ -451,6 +535,25 @@
     }
     .mobile-cta .btn { min-height: 48px; padding: .75rem .95rem; font-size: .78rem; }
     .mobile-cta .btn:last-child { width: 48px; padding: 0; }
+
+    .header-cta { display: flex; align-items: center; gap: clamp(.7rem, 2vw, 1.4rem); }
+    .header-cta .btn { min-height: 44px; padding: .6rem 1.15rem; font-size: .82rem; }
+    .countdown--mini { display: inline-flex; align-items: center; gap: .6rem; margin: 0; }
+    .countdown--mini__label { color: rgba(255,255,255,.62); font-size: .66rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+    .countdown--mini__time { display: inline-flex; align-items: baseline; gap: .45rem; color: rgba(255,255,255,.5); font-size: .64rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+    .countdown--mini__time strong { color: var(--white); font-size: 1.05rem; font-weight: 800; margin-right: 1px; letter-spacing: -.02em; }
+
+    .video-modal { position: fixed; inset: 0; z-index: 200; display: none; align-items: center; justify-content: center; padding: 20px; }
+    .video-modal.is-open { display: flex; }
+    .video-modal__backdrop { position: absolute; inset: 0; background: rgba(3,20,18,.82); backdrop-filter: blur(4px); }
+    .video-modal__dialog { position: relative; width: min(960px, 100%); }
+    .video-modal__frame { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: #000; box-shadow: var(--shadow-lg); }
+    .video-modal__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .video-modal__close { position: absolute; top: -48px; right: 0; width: 40px; height: 40px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--white); color: var(--ink); font-size: 1.5rem; line-height: 1; cursor: pointer; box-shadow: var(--shadow-sm); }
+    .video-modal__close:hover { background: var(--gold); }
+
+    @media (max-width: 720px) { .countdown--mini__label { display: none; } }
+    @media (max-width: 480px) { .site-header .brand img { width: 104px; } .header-cta { gap: .55rem; } .header-cta .btn { padding: .55rem .9rem; font-size: .78rem; } }
 
     @media (max-width: 1020px) {
       .nav__links { display: none; }
@@ -531,25 +634,96 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#main" aria-label="Palm Global Academy home">
+        <img src="assets/logo.png" alt="Palm Global Academy">
+      </a>
+      <div class="header-cta">
+        <div class="countdown countdown--mini" data-deadline="2026-08-31T23:59:59" aria-label="Time remaining until applications close">
+          <span class="countdown--mini__label">Applications close in</span>
+          <span class="countdown--mini__time">
+            <span><strong data-cd="days">--</strong>d</span>
+            <span><strong data-cd="hours">--</strong>h</span>
+            <span><strong data-cd="mins">--</strong>m</span>
+            <span><strong data-cd="secs">--</strong>s</span>
+          </span>
+        </div>
+        <a class="btn btn--gold" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Book a Call</a>
+      </div>
+    </div>
+  </header>
+
   <main id="main">
     <section class="hero">
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <span class="eyebrow">September 2026 admissions · Years 5–6 · 7–9 · 10–11</span>
-          <h1>Protect their faith. Raise their academic standard. Give them a school built for both.</h1>
-          <p class="hero__lead">Palm Global Academy helps Muslim parents provide a safe, high-quality British education through live subject specialists, a clear individualised plan and Islamic values woven throughout the school day.</p>
+          <span class="hero__announce">September 2026 Admissions · Years 5–6 · 7–9</span>
+          <h1 class="hero__title">We specialise in helping Muslim parents provide a safe and high quality Islamic education for their children through our expert-led online learning framework, using our clear individualised plan, without compromising academic excellence or values.</h1>
+        </div>
+        <div class="hero__step hero__step--one">
+          <span class="step-pill"><span class="step-pill__num">1</span> Watch the video</span>
         </div>
         <div class="hero__visual">
           <iframe class="hero__video" data-youtube="YXH3VgcHGqU" title="Welcome to Palm Global Academy" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
         </div>
         <div class="hero__conversion">
+          <div class="hero__step hero__step--two">
+            <span class="step-pill"><span class="step-pill__num">2</span> Book a call</span>
+          </div>
+          <div class="countdown" data-deadline="2026-08-31T23:59:59">
+            <span class="countdown__label">Applications close — last day of August</span>
+            <div class="countdown__timer" role="timer" aria-label="Time remaining until applications close">
+              <span class="countdown__unit"><strong data-cd="days">--</strong>days</span>
+              <span class="countdown__sep">:</span>
+              <span class="countdown__unit"><strong data-cd="hours">--</strong>hrs</span>
+              <span class="countdown__sep">:</span>
+              <span class="countdown__unit"><strong data-cd="mins">--</strong>min</span>
+              <span class="countdown__sep">:</span>
+              <span class="countdown__unit"><strong data-cd="secs">--</strong>sec</span>
+            </div>
+          </div>
+          <p class="hero__slots"><span class="hero__slots-dot"></span> Limited slots remaining for September 2026</p>
           <div class="actions hero__actions">
             <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">
-              Explore the right path for my child
+              Book a Call
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
           </div>
           <p class="hero__micro">No pressure. No obligation. Just an honest conversation about your child and the right next step.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow">Who this is &amp; isn’t for</span>
+          <h2>PGA works best for families ready for a real school routine at home.</h2>
+          <p>The goal is not to admit every family. It is to make sure your child, your expectations and the PGA learning model are genuinely well matched.</p>
+        </div>
+        <div class="fit-grid">
+          <article class="fit-card fit-card--yes">
+            <h3>Who this is for ✅</h3>
+            <ul>
+              <li>Parents willing to invest in their child’s education — time, effort and money.</li>
+              <li>Parents concerned about what is taught in mainstream schools who want a long-term solution.</li>
+              <li>Families concerned about their child’s Islamic identity.</li>
+              <li>Able to provide a supportive learning environment at home — PC/laptop, books, stationery, desk and a quiet room, plus checking homework and progress.</li>
+              <li>Students who are disciplined and keen to learn and excel.</li>
+              <li>Families wanting a high-quality education that leads on to university and a career.</li>
+            </ul>
+          </article>
+          <article class="fit-card fit-card--talk">
+            <h3>Who this isn’t for ❌</h3>
+            <ul>
+              <li>Parents looking for an interim place or short-term solution.</li>
+              <li>Parents who don’t view education as an investment.</li>
+              <li>Students who are not disciplined or inclined to learn, or are badly behaved.</li>
+              <li>Homes that cannot provide a quiet, supportive environment — or parents not involved in their child’s education.</li>
+              <li>Families not interested in a strong Islamic foundation — tarbiyah, Arabic and understanding of the Qur’an.</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
@@ -701,7 +875,7 @@
         <div class="section-head center">
           <span class="eyebrow">No gaps. No guesswork. A clear next stage.</span>
           <h2>One academic path—from stronger foundations to recognised qualifications.</h2>
-          <p>For September 2026, places are available across Years 5–6, 7–9 and 10–11. Each stage is designed to prepare your child for what comes next—not simply move them through another school year.</p>
+          <p>For September 2026, places are available across Years 5–6 and 7–9. Each stage is designed to prepare your child for what comes next—not simply move them through another school year.</p>
         </div>
         <div class="programmes">
           <article class="programme">
@@ -720,15 +894,6 @@
               <h3>Turn potential into independence</h3>
               <p>Subject-specialist teaching builds deeper thinking, stronger study habits and the confidence to make informed IGCSE choices.</p>
               <a class="programme__link" href="https://palmglobalacademy.com/year-7-9-key-stage-3/" target="_blank" rel="noopener">Explore Key Stage 3</a>
-            </div>
-          </article>
-          <article class="programme">
-            <img class="programme__image" src="assets/pga-secondary-learning.jpg" alt="Student preparing for IGCSE studies at home" width="1400" height="2100">
-            <div class="programme__body">
-              <span class="programme__tag">IGCSE · Years 10–11</span>
-              <h3>Prepare for qualifications that open doors</h3>
-              <p>Focused Edexcel International GCSE courses help students work towards subject mastery, independence and future study.</p>
-              <a class="programme__link" href="https://palmglobalacademy.com/year-10-11-igcse/" target="_blank" rel="noopener">Explore IGCSE</a>
             </div>
           </article>
         </div>
@@ -779,17 +944,6 @@
               <li>Digital resources and subscriptions included</li>
             </ul>
           </article>
-          <article class="fee-card">
-            <span class="fee-card__stage">IGCSE · Years 10–11</span>
-            <h3>Work towards recognised qualifications</h3>
-            <div class="fee-card__price">£3,950 <span>pay in full</span></div>
-            <p>Focused Edexcel International GCSE study with specialist guidance, assessment and clear subject targets.</p>
-            <ul>
-              <li>Termly: approximately £1,416 × 3</li>
-              <li>Monthly: approximately £379 × 12</li>
-              <li>Digital resources and subscriptions included</li>
-            </ul>
-          </article>
         </div>
         <p class="fee-note"><strong>Additional admission costs:</strong> a one-off £50 non-refundable registration fee and a £500 refundable deposit apply. Fees are payable in pounds sterling. Recommended textbooks are not included. All amounts and refund terms are confirmed in your offer and admissions policy.</p>
       </div>
@@ -823,7 +977,7 @@
       </div>
     </section>
 
-    <section class="section--tight section--gold">
+    <section class="section--tight section--dark">
       <div class="wrap consult-box">
         <div>
           <span class="eyebrow">Your next step</span>
@@ -831,40 +985,7 @@
           <p>We’ll listen to what you want for your child, identify the most suitable year group and explain exactly how learning at PGA works. You will leave knowing whether it is worth taking the next step.</p>
         </div>
         <div class="actions">
-          <a class="btn btn--ink btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Book my free admissions call</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--white">
-      <div class="wrap">
-        <div class="section-head center">
-          <span class="eyebrow">Who PGA is built for</span>
-          <h2>PGA works best for families ready for a real school routine at home.</h2>
-          <p>The goal is not to admit every family. It is to make sure your child, your expectations and the PGA learning model are genuinely well matched.</p>
-        </div>
-        <div class="fit-grid">
-          <article class="fit-card fit-card--yes">
-            <h3>PGA could be the right fit if your family…</h3>
-            <ul>
-              <li>Views education as a long-term investment of time, effort and money.</li>
-              <li>Is concerned about mainstream influences and wants a lasting alternative.</li>
-              <li>Wants to protect and strengthen your child’s Islamic identity.</li>
-              <li>Can provide a quiet workspace, suitable device, books and parental oversight.</li>
-              <li>Has a student who is ready to learn, follow routines and aim high.</li>
-              <li>Wants a high-quality route towards university, a career and purposeful adulthood.</li>
-            </ul>
-          </article>
-          <article class="fit-card fit-card--talk">
-            <h3>PGA is unlikely to be the right fit if you want…</h3>
-            <ul>
-              <li>A short-term holding place rather than a committed school relationship.</li>
-              <li>A self-paced programme with little attendance or accountability.</li>
-              <li>A school to replace all parental involvement at home.</li>
-              <li>Admission without readiness to follow behaviour and learning expectations.</li>
-              <li>Academics without a strong foundation in tarbiyah, Arabic and understanding the Qur’an.</li>
-            </ul>
-          </article>
+          <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Book a Call</a>
         </div>
       </div>
     </section>
@@ -905,7 +1026,7 @@
         </div>
         <div class="admissions-note"><strong>If a child is not quite ready for entry:</strong> PGA may recommend a July English and Mathematics booster programme, priced at £275 with re-evaluation, rather than closing the door on their progress.</div>
         <div class="actions actions--center" style="margin-top:2.2rem">
-          <a class="btn btn--teal btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Start with my free admissions call</a>
+          <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Book a Call</a>
           <a class="btn" style="border-color:var(--line);background:var(--white)" href="https://palmglobalacademy.com/apply-now/" target="_blank" rel="noopener">View fees and admissions</a>
         </div>
       </div>
@@ -934,11 +1055,11 @@
     <section class="section final-cta">
       <div class="wrap final-cta__grid">
         <div>
-          <span class="eyebrow">September 2026 · Years 5–6 · 7–9 · 10–11</span>
+          <span class="eyebrow">September 2026 · Years 5–6 · 7–9</span>
           <h2>Give your child a school that protects who they are—and prepares them for where they are going.</h2>
           <p class="lead">If you are ready for specialist teaching, visible progress, clear parent support and an education built around Islamic values, start with a free admissions call. We will help you decide whether PGA is the right long-term path for your family.</p>
           <div class="actions" style="margin-top:2rem">
-            <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">See if PGA is right for my child</a>
+            <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Book a Call</a>
           </div>
           <div class="contact-row">
             <span>Mon–Fri, 8:00am–4:30pm UK</span>
@@ -953,6 +1074,14 @@
     </section>
   </main>
 
+  <div class="video-modal" id="video-modal" aria-hidden="true">
+    <div class="video-modal__backdrop" data-close></div>
+    <div class="video-modal__dialog" role="dialog" aria-modal="true" aria-label="Video player">
+      <button class="video-modal__close" type="button" data-close aria-label="Close video">&times;</button>
+      <div class="video-modal__frame" id="video-modal__frame"></div>
+    </div>
+  </div>
+
   <script>
     (() => {
       'use strict';
@@ -963,19 +1092,62 @@
         const id = heroVideo.dataset.youtube;
         heroVideo.src = `https://www.youtube.com/embed/${encodeURIComponent(id)}?autoplay=1&mute=1&loop=1&playlist=${encodeURIComponent(id)}&rel=0&playsinline=1&origin=${encodeURIComponent(pageOrigin)}&widget_referrer=${encodeURIComponent(widgetReferrer)}`;
       }
+
+      // Testimonial videos open in a lightbox popup instead of playing inline on the card
+      const modal = document.getElementById('video-modal');
+      const modalFrame = document.getElementById('video-modal__frame');
+      let lastTrigger = null;
+      const openModal = (id, title) => {
+        if (!modal || !modalFrame || !id) return;
+        modalFrame.innerHTML = `<iframe src="https://www.youtube.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&playsinline=1&origin=${encodeURIComponent(pageOrigin)}&widget_referrer=${encodeURIComponent(widgetReferrer)}" title="${title}" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        const closeBtn = modal.querySelector('.video-modal__close');
+        if (closeBtn) closeBtn.focus();
+      };
+      const closeModal = () => {
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        modalFrame.innerHTML = '';
+        document.body.style.overflow = '';
+        if (lastTrigger) { lastTrigger.focus(); lastTrigger = null; }
+      };
       document.querySelectorAll('.js-youtube').forEach((button) => {
         button.addEventListener('click', () => {
-          const id = button.dataset.youtube;
-          const title = button.dataset.title || 'Palm Global Academy video';
-          if (!id) return;
-          const iframe = document.createElement('iframe');
-          iframe.src = `https://www.youtube.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&playsinline=1&origin=${encodeURIComponent(pageOrigin)}&widget_referrer=${encodeURIComponent(widgetReferrer)}`;
-          iframe.title = title;
-          iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-          iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
-          button.replaceWith(iframe);
-          iframe.focus();
+          lastTrigger = button;
+          openModal(button.dataset.youtube, button.dataset.title || 'Palm Global Academy video');
         });
+      });
+      if (modal) {
+        modal.addEventListener('click', (e) => { if (e.target.hasAttribute('data-close')) closeModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
+      }
+
+      // Countdown timers — every element carrying a deadline (hero + sticky header)
+      const pad = (n) => String(n).padStart(2, '0');
+      document.querySelectorAll('.countdown[data-deadline]').forEach((cd) => {
+        const deadline = new Date(cd.dataset.deadline).getTime();
+        const out = {
+          days: cd.querySelector('[data-cd="days"]'),
+          hours: cd.querySelector('[data-cd="hours"]'),
+          mins: cd.querySelector('[data-cd="mins"]'),
+          secs: cd.querySelector('[data-cd="secs"]')
+        };
+        const tick = () => {
+          let diff = Math.max(0, deadline - Date.now());
+          const d = Math.floor(diff / 86400000); diff -= d * 86400000;
+          const h = Math.floor(diff / 3600000); diff -= h * 3600000;
+          const m = Math.floor(diff / 60000); diff -= m * 60000;
+          const s = Math.floor(diff / 1000);
+          if (out.days) out.days.textContent = pad(d);
+          if (out.hours) out.hours.textContent = pad(h);
+          if (out.mins) out.mins.textContent = pad(m);
+          if (out.secs) out.secs.textContent = pad(s);
+        };
+        tick();
+        setInterval(tick, 1000);
       });
     })();
   </script>
