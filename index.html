@@ -190,11 +190,11 @@
     .hero__micro { margin: 1.25rem 0 0; color: rgba(255,255,255,.63); font-size: .82rem; }
     .hero__conversion { margin-top: 2rem; text-align: center; }
     .hero__conversion .hero__actions { margin-top: 0; }
-    .hero__visual { position: relative; width: 100%; max-width: 960px; margin: 3rem auto 0; }
+    .hero__visual { position: relative; width: 100%; max-width: 360px; margin: 3rem auto 0; }
     .hero__video {
       display: block;
       width: 100%;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 9 / 16;
       border: 0;
       background: #001815;
       border-radius: var(--radius-lg);
@@ -585,7 +585,7 @@
       .hero__visual, .video-layout > :first-child { grid-row: 2; }
       .hero__copy { text-align: center; }
       .hero__actions { justify-content: center; }
-      .hero__visual { max-width: 100%; margin: 2rem auto 0; }
+      .hero__visual { max-width: min(360px, 90vw); margin: 2rem auto 0; }
       .hero__badge { right: -10px; bottom: -22px; width: 128px; height: 128px; }
       .split, .fit-grid, .journey, .journey--five, .year-rhythm { grid-template-columns: 1fr; }
       .long-game { grid-template-columns: 1fr; }
@@ -665,7 +665,7 @@
           <span class="step-pill"><span class="step-pill__num">1</span> Watch the video</span>
         </div>
         <div class="hero__visual">
-          <iframe class="hero__video" data-youtube="YXH3VgcHGqU" title="Welcome to Palm Global Academy" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+          <iframe class="hero__video" data-youtube="jI1lr61BhGA" title="Palm Global Academy — September 2026 Admissions" loading="eager" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
         </div>
         <div class="hero__conversion">
           <div class="hero__step hero__step--two">
