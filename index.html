@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>September 2026 Admissions | Palm Global Academy</title>
-  <meta name="description" content="Protect your child’s faith while raising their academic standard through Palm Global Academy’s specialist-led British and Islamic online education framework. September 2026 admissions for Years 5–6 and 7–9.">
+  <meta name="description" content="Protect your child’s faith while raising their academic standard through Palm Global Academy’s specialist-led British and Islamic online education framework. September 2026 admissions for Years 7–9.">
   <meta name="theme-color" content="#063b37">
   <link rel="icon" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -402,7 +402,7 @@
     .schedule__number { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: var(--teal-soft); color: var(--teal-dark); font-weight: 800; }
     .schedule__item p { margin: 0; color: var(--muted); }
 
-    .programmes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; max-width: 840px; margin-inline: auto; }
+    .programmes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 400px)); gap: 1.2rem; justify-content: center; }
     .programme { display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,.13); border-radius: var(--radius); overflow: hidden; background: rgba(255,255,255,.065); }
     .programme__image { height: 230px; width: 100%; object-fit: cover; }
     .programme__body { display: flex; flex-direction: column; flex: 1; padding: 1.6rem; }
@@ -445,9 +445,9 @@
     .leadership__image { width: 100%; max-width: 570px; justify-self: end; }
     .leadership__image img { width: 100%; height: clamp(340px, 27vw, 410px); object-fit: cover; object-position: center 58%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
     .credentials { display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem; margin-top: 2rem; }
-    .credential { padding: 1.2rem; border: 1px solid rgba(255,255,255,.13); border-radius: var(--radius-sm); background: rgba(255,255,255,.06); }
-    .credential strong { display: block; color: var(--gold); margin-bottom: .35rem; font-size: 1.05rem; }
-    .credential span { color: rgba(233,244,242,.7); font-size: .82rem; }
+    .credential { padding: 1.2rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--white); }
+    .credential strong { display: block; color: var(--teal-dark); margin-bottom: .35rem; font-size: 1.05rem; }
+    .credential span { color: var(--muted); font-size: .82rem; }
 
     .journey { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; counter-reset: journey; }
     .journey__step { position: relative; padding: 2rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); counter-increment: journey; }
@@ -658,7 +658,7 @@
     <section class="hero">
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <span class="hero__announce">September 2026 Admissions · Years 5–6 · 7–9</span>
+          <span class="hero__announce">September 2026 Admissions · Years 7–9</span>
           <h1 class="hero__title">We specialise in helping Muslim parents provide a safe and high quality Islamic education for their children through our expert-led online learning framework, using our clear individualised plan, without compromising academic excellence or values.</h1>
         </div>
         <div class="hero__step hero__step--one">
@@ -870,9 +870,10 @@
         <div class="section-head center">
           <span class="eyebrow">No gaps. No guesswork. A clear next stage.</span>
           <h2>One academic path—from stronger foundations to recognised qualifications.</h2>
-          <p>For September 2026, places are available across Years 5–6 and 7–9. Each stage is designed to prepare your child for what comes next—not simply move them through another school year.</p>
+          <p>For September 2026, places are available for Years 7–9 — designed to prepare your child for what comes next, not simply move them through another school year.</p>
         </div>
         <div class="programmes">
+          <!-- Primary · Years 5–6 hidden for now, restore later
           <article class="programme">
             <img class="programme__image" src="assets/pga-primary-learning.jpg" alt="Primary-aged student learning online" width="1400" height="2100">
             <div class="programme__body">
@@ -882,6 +883,8 @@
               <a class="programme__link" href="https://palmglobalacademy.com/year-3-6-key-stage-2/" target="_blank" rel="noopener">Explore Key Stage 2</a>
             </div>
           </article>
+          -->
+          <!-- programmes now shows a single Years 7-9 card; grid auto-centers it -->
           <article class="programme">
             <img class="programme__image" src="assets/pga-students-online.jpg" alt="Secondary students learning together online" width="1400" height="2100">
             <div class="programme__body">
@@ -909,7 +912,7 @@
       </div>
     </section>
 
-    <section class="section section--soft" id="fees">
+    <section class="section section--soft" id="fees" hidden>
       <div class="wrap">
         <div class="section-head center">
           <span class="eyebrow">A serious education is an investment</span>
@@ -985,7 +988,7 @@
       </div>
     </section>
 
-    <section class="section section--dark">
+    <section class="section section--soft">
       <div class="wrap leadership">
         <div>
           <span class="eyebrow">Why Palm Global Academy had to exist</span>
@@ -1014,15 +1017,16 @@
         </div>
         <div class="journey journey--five">
           <article class="journey__step"><h3>Expression of interest</h3><p>Share the basic parent, student and year-group details so admissions can begin guiding you.</p></article>
-          <article class="journey__step"><h3>Full application</h3><p>Use your secure portal access to provide ID, proof of address, the latest school report and relevant SEN or medical information.</p></article>
-          <article class="journey__step"><h3>Registration and assessment</h3><p>Pay the £50 non-refundable registration fee, then book and complete the entrance assessment.</p></article>
+          <article class="journey__step"><h3>Admission Test</h3><p>Pay the £50 non-refundable registration fee, then book and complete the entrance assessment.</p></article>
           <article class="journey__step"><h3>Results and interview</h3><p>Meet a senior member of PGA to review the result, discuss the family and confirm whether the placement is right.</p></article>
+          <article class="journey__step"><h3>Full application</h3><p>Use your secure portal access to provide ID, proof of address, the latest school report and relevant SEN or medical information.</p></article>
           <article class="journey__step"><h3>Offer and onboarding</h3><p>Accept the offer, choose a payment plan, pay the £500 deposit and receive logins, timetable and orientation details.</p></article>
         </div>
+        <!-- Booster note hidden for now, restore later
         <div class="admissions-note"><strong>If a child is not quite ready for entry:</strong> PGA may recommend a July English and Mathematics booster programme, priced at £275 with re-evaluation, rather than closing the door on their progress.</div>
+        -->
         <div class="actions actions--center" style="margin-top:2.2rem">
           <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Book a Call</a>
-          <a class="btn" style="border-color:var(--line);background:var(--white)" href="https://palmglobalacademy.com/apply-now/" target="_blank" rel="noopener">View fees and admissions</a>
         </div>
       </div>
     </section>
@@ -1050,8 +1054,8 @@
     <section class="section final-cta">
       <div class="wrap final-cta__grid">
         <div>
-          <span class="eyebrow">September 2026 · Years 5–6 · 7–9</span>
-          <h2>Give your child a school that protects who they are—and prepares them for where they are going.</h2>
+          <span class="eyebrow">September 2026 · Years 7–9</span>
+          <h2>Give your child a school that protects their faith and values — and helps them excel academically.</h2>
           <p class="lead">If you are ready for specialist teaching, visible progress, clear parent support and an education built around Islamic values, start with a free admissions call. We will help you decide whether PGA is the right long-term path for your family.</p>
           <div class="actions" style="margin-top:2rem">
             <a class="btn btn--gold btn--lg" href="https://calendly.com/palmglobalacademy/palm-global-academy" target="_blank" rel="noopener">Book a Call</a>
