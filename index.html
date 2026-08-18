@@ -386,7 +386,7 @@
     .compare-card li:last-child { padding-bottom: 0; border-bottom: 0; }
     .compare-card strong { display: block; color: var(--ink); margin-bottom: .2rem; }
 
-    .pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
     .pillar { position: relative; min-height: 290px; padding: 2rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); overflow: hidden; }
     .pillar::after { content: attr(data-number); position: absolute; right: -6px; bottom: -35px; color: var(--teal-soft); font-size: 8.5rem; font-weight: 800; line-height: 1; }
     .pillar__icon { width: 52px; height: 52px; display: grid; place-items: center; margin-bottom: 1.4rem; border-radius: 15px; background: var(--teal-soft); color: var(--teal); }
@@ -745,16 +745,11 @@
             <p>Live lessons are taught by teachers with the subject knowledge to explain clearly, challenge appropriately and prepare students for recognised qualifications.</p>
           </article>
           <article class="pillar" data-number="2">
-            <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.7A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/></svg></div>
-            <h3>Islam throughout school life</h3>
-            <p>Tarbiyah, Qur’an Studies and Qur’anic Arabic connect knowledge with faith, identity, character and conduct.</p>
-          </article>
-          <article class="pillar" data-number="3">
             <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 20v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="3"/><path d="M20 8v6M17 11h6"/></svg></div>
             <h3>A clear individualised plan</h3>
             <p>Baseline information, subject targets, regular checkpoints and intervention plans keep support relevant to the child in front of us.</p>
           </article>
-          <article class="pillar" data-number="4">
+          <article class="pillar" data-number="3">
             <div class="pillar__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19V5h16v14H4Z"/><path d="m8 14 2-2 2 1 4-4"/></svg></div>
             <h3>Structure parents can see</h3>
             <p>Timetables, trained platform use, a student liaison officer, reports and parent meetings remove guesswork from learning at home.</p>
@@ -802,11 +797,13 @@
               <li>Academic and Islamic-development review</li>
             </ul>
           </article>
+          <!-- Phase 4 (long game) commented out, restore later
           <article class="phase-card">
             <span class="phase-card__time">Beyond term 1 · The long game</span>
             <h3>Phase 4 · The long game: an educational flight path</h3>
             <p>Beyond the first term, PGA helps families think in years—not weeks—across academic attainment, Qur’an, tarbiyah, character and the route towards IGCSE and further study.</p>
           </article>
+          -->
         </div>
       </div>
     </section>
