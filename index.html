@@ -525,6 +525,7 @@
     .site-footer { padding: 2rem 1.5rem; border-top: 1px solid var(--line); background: var(--white); color: var(--muted); text-align: center; font-size: .82rem; }
     .site-footer p { margin: 0 0 .4rem; }
     .site-footer p:last-child { margin-bottom: 0; }
+    .site-footer__contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1.25rem; }
     .site-footer a { color: var(--teal-dark); font-weight: 600; }
     .site-footer a:hover { color: var(--teal); }
     .footer { padding: 3.5rem 0 7rem; background: #021d1b; color: rgba(255,255,255,.66); }
@@ -957,6 +958,11 @@
 
   <footer class="site-footer">
     <p>&copy; 2026 Palm Global Academy. All rights reserved.</p>
+    <p class="site-footer__contact">
+      <a href="mailto:info@palmglobalacademy.com">info@palmglobalacademy.com</a>
+      <a href="tel:+442030267921">020 3026 7921</a>
+      <a href="https://wa.me/447944624585" target="_blank" rel="noopener">WhatsApp 07944 624585</a>
+    </p>
     <p>
       <a href="https://palmglobalacademy.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
       &nbsp;·&nbsp;
@@ -1038,6 +1044,13 @@
         };
         tick();
         setInterval(tick, 1000);
+      });
+
+      // Calendly booking confirmation → dataLayer event for GTM (trigger: Custom Event "consultation_booked")
+      window.addEventListener('message', (e) => {
+        if (e.origin !== 'https://calendly.com' || !e.data || e.data.event !== 'calendly.event_scheduled') return;
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'consultation_booked' });
       });
     })();
   </script>
